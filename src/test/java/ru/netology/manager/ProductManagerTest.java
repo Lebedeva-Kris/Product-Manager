@@ -28,25 +28,15 @@ class ProductManagerTest {
         manager.add(smartphone2);
     }
 
-//    @Test
-//    public void shouldSearchIfTextEmpty() {
-//        String text = "";
-//
-//        Product[] expected = {};
-//        Product[] actual = ProductManager.searchBy(text);
-//
-//        assertArrayEquals(expected, actual);
-//    }
-//
-//    @Test
-//    public void shouldSearchByProductName() {
-//        String text = "1000";
-//
-//        Product[] expected = {product1};
-//        Product[] actual = ProductManager.searchBy(text);
-//
-//        assertArrayEquals(expected, actual);
-//    }
+    @Test
+    public void shouldSearchIfTextEmpty() {
+        String text = "";
+
+        Product[] expected = {};
+        Product[] actual = ProductManager.searchBy(text);
+
+        assertArrayEquals(expected, actual);
+    }
 
     @Test
     public void shouldSearchByBookName() {
